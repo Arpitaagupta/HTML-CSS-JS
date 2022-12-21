@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function preferedBranch(){
+  prefer = document.forms[0].branch.value;
+ alert("Your branch is" + prefer);
+}
+</script>
+</head>
+
+<body>
+
+Choose your B.Tech Branch:
+  <select id="branch" oncharge="preferedBranch()">
+  <option value="Computer Science">Computer Science</option>
+  <option value="Civil">Civil</option>
+  <option value="Electrical">Electrical</option>
+  <option value="Electronics and Telecommunication">Electronics and Telecommunication</option>
+  <option value="Information Technology">Information Technology</option>
+
+</select>
+</form>
+</body>
+</html>
