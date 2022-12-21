@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            #register_email{
+                width:44%;
+            }
+            #registerPassword {
+                width:71%;
+            }
+            #confirmPassword{
+                width:71%;
+            }
+            hr {
+                margin-right: 120px;
+                background-color:gray;
+                height:1px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="FIRST.html" method="GET">
+        <table>
+            <caption style="text-align:left;"> <h1><b>Sign Up</b></h1> 
+            <p style="color:gray;"><big>Please fill in this form to create an account!</big></p>
+            <hr>
+            </caption>
+            <tr>
+           <td>
+            <input type="text" name="firstName" class="inputstyle" id="register_firstName" placeholder="First Name" style="background-color:rgb(226, 226, 226); border:black"  />
+            <input type="text" name="lastName" class="inputstyle" id="register_lastName" placeholder="Last Name" style=" background-color:rgb(226, 226, 226); border:black;" />
+        </td>
+    </tr>
+            <br/>
+        <tr>
+            <td colspan="2"> <input type="email" name="email" class="inputstyle" placeholder="Email" id="register_email" style=" background-color:rgb(226, 226, 226); border:black;"/> 
+            </td>
+        </tr> <br>
+        <tr>
+                <td>  <input type="password"  name="password" class="inputstyle"  id="registerPassword" placeholder="Password" style=" background-color:rgb(226, 226, 226); border:black;"/></td>
+        </tr>
+        <tr>
+            <td>  <input type="password"  name="cnfrmpassword" class="inputstyle"  id="confirmPassword" placeholder="Confirm Password" style=" background-color:rgb(226, 226, 226); border:black;"/></td>
+    </tr>
+    <tr>
+        <td> <input type="checkbox"  id="terms" value="terms"/> 
+        <label for ="terms">
+            I accept the <a href ="termsofuse.html" target="_blank">Terms of Use</a> & <a href ="privacy_policy.html" target="_blank">Privacy Policy</a>
+        </label> 
+    </table>
+
+        <input type="submit" id="register_0" value="Sign Up" style="background-color:rgb(42, 205, 255); border:black; border-radius: 5px;" >
+        </form>
+    </body>
+</html>

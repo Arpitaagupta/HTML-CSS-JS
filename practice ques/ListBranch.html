@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
+        <center>
+        <h1> BIT DURG </h1>
+    </center>
+    <ol>
+        <li><b>
+            Computer Science &amp; Engineering</b>
+            <p>Covers several topics related to computation, programming
+ languages, program design, computer hardware and software and 
+integrates several fields of computer science</p>
+        </li>
+        <ul type="circle">
+        <li><b>Computer Science Engineering Data science</b></li>
+        <p>Bachelor of Technology in Computer Engineering (CSD) is a four year Program which leads to specialization in Data Science.</p>
+        <li><b>Computer Science Engineering Artificial Intelligence</b></li>
+        <p>Artificial Intelligence Engineering is a branch of computer science& engineering that deals with the study of intelligence and learning capability of machines which make them to work as human beings.</p>
+        </ul>
+        <li>
+          <b>Information Technology </b>
+          <p>A software engineering approach to designing and developing information systems.</p>
+        </li>
+        <li>
+           <b>Electrical Engineering</b>
+        </li>
+        <p> The branch of engineering that deals with the practical 
+application of the theory of electricity to the construction of 
+machinery, power supplies</p>
+        <li> 
+            <b>Electrical and Electronics Engineering</b>
+            <p>Branch of electrical engineering concerned with the uses of the electromagnetic spectrum</p>
+        </li>
+        <li>
+         <b>  Electronics and Telecommunication Engineering</b>
+            <p> Learners may acquire a full knowledge of computer architecture and microprocessors, VLSI and embedded systems</p>
+        </li>
+        <li>
+            <b>Mechanical Enginneering</b>
+            <p>Combines engineering physics and mathematics principles 
+with materials science, to design, analyze, manufacture, and maintain 
+mechanical systems</p>
+        </li>
+        <li>
+           <b> Civil Engineering</b>
+            <p>
+                Designing and executing structural works that serve the 
+general public, such as dams, bridges, aqueducts, canals, etc
+            </p>
+        </li>
+    </ol>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

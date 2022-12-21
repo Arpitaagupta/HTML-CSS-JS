@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <style>
+            #register_email{
+                width:44%;
+            }
+            #registerPassword {
+                width:71%;
+            }
+            #confirmPassword{
+                width:71%;
+            }
+            hr {
+                margin-right: 120px;
+                background-color:gray;
+                height:1px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="FIRST.html" method="GET">
+        <br><br><table>
+            <caption style="text-align:left;"> <h1><b>Sign Up</b></h1> 
+            <p style="color:gray;"><big>Please fill in this form to create an account!</big></p>
+            <hr>
+            </caption>
+            <tbody><tr>
+           <td>
+            <input type="text" name="firstName" class="inputstyle" id="register_firstName" placeholder="First Name" style="background-color:rgb(226, 226, 226); border:black">
+            <input type="text" name="lastName" class="inputstyle" id="register_lastName" placeholder="Last Name" style=" background-color:rgb(226, 226, 226); border:black;">
+        </td>
+    </tr>
+            
+        <tr>
+            <td colspan="2"> <input type="email" name="email" class="inputstyle" placeholder="Email" id="register_email" style=" background-color:rgb(226, 226, 226); border:black;"> 
+            </td>
+        </tr> 
+        <tr>
+                <td>  <input type="password" name="password" class="inputstyle" id="registerPassword" placeholder="Password" style=" background-color:rgb(226, 226, 226); border:black;"></td>
+        </tr>
+        <tr>
+            <td>  <input type="password" name="cnfrmpassword" class="inputstyle" id="confirmPassword" placeholder="Confirm Password" style=" background-color:rgb(226, 226, 226); border:black;"></td>
+    </tr>
+    <tr>
+        <td> <input type="checkbox" id="terms" value="terms" checked="checked"> 
+        <label for="terms">
+            I accept the <a href="http://127.0.0.1:5500/termsofuse.html" target="_blank">Terms of Use</a> &amp; <a href="http://127.0.0.1:5500/privacy_policy.html" target="_blank">Privacy Policy</a>
+        </label> 
+    </td></tr></tbody></table>
+
+        <input type="submit" id="register_0" value="Sign Up" style="background-color:rgb(42, 205, 255); border:black; border-radius: 5px;">
+        </form>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
